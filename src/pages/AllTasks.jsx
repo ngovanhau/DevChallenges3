@@ -1,6 +1,5 @@
-// src/pages/AllTasks.jsx
 import React, { useState, useEffect } from 'react';
-
+import '../styles/All.css';
 const AllTasks = () => {
   const [tasks, setTasks] = useState([]);
   const [taskText, setTaskText] = useState('');
@@ -40,8 +39,8 @@ const AllTasks = () => {
           style={{ flex: 1, padding: '10px', marginRight: '10px', borderRadius: '5px', border: '1px solid #ccc' }}
         />
         <button 
+          className='btnaddall'
           onClick={handleAddTask}
-          style={{ padding: '10px 20px', backgroundColor: 'blue', color: 'white', border: 'none', borderRadius: '5px', width: 80 }}
         >
           Add
         </button>

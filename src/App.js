@@ -23,7 +23,6 @@ const App = () => {
         <div className='footer'>
           <h5>created by Văn Hậu-devChallenges.io</h5>
         </div>
-        
       </div>
     </Router>
   );

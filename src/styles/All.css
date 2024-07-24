@@ -1,0 +1,11 @@
+button.btnaddall {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+}
+button.btnaddall:hover {
+    background-color: rgb(40, 31, 117);
+}

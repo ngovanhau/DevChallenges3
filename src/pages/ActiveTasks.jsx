@@ -1,6 +1,5 @@
-// src/pages/ActiveTasks.jsx
 import React, { useState, useEffect } from 'react';
-
+import '../styles/Active.css';
 const ActiveTasks = () => {
   const [tasks, setTasks] = useState([]);
   const [taskText, setTaskText] = useState('');
@@ -41,7 +40,7 @@ const ActiveTasks = () => {
         />
         <button 
           onClick={handleAddTask}
-          style={{ padding: '10px 20px', backgroundColor: 'blue', color: 'white', border: 'none', borderRadius: '5px', width: 80 }}
+          className='active'
         >
           Add
         </button>

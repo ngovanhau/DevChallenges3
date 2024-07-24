@@ -1,6 +1,5 @@
-// src/pages/CompletedTasks.jsx
 import React, { useState, useEffect } from 'react';
-
+import '../styles/Completed.css'
 const CompletedTasks = () => {
   const [tasks, setTasks] = useState([]);
 
@@ -47,7 +46,7 @@ const CompletedTasks = () => {
       </ul>
       <button 
         onClick={handleDeleteAll}
-        style={{ padding: '10px 20px', backgroundColor: 'red', color: 'white', border: 'none', borderRadius: '5px', marginLeft: 505 }}
+        className='delete'
       >
         delete all
       </button>
