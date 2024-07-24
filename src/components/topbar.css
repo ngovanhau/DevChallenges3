@@ -1,0 +1,34 @@
+/* src/components/topbar.css */
+.topbar {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.topbar-container {
+  display: flex;
+}
+
+.topbar-item {
+  margin: 0 15px;
+  padding: 10px;
+  position: relative;
+}
+
+.topbar-item a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 5px;
+}
+
+.topbar-item a.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
